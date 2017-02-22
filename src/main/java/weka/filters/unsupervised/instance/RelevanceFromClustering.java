@@ -16,7 +16,7 @@ import weka.core.Instances;
  * @author Lucian Sasu
  * lmsasu <at> yahoo dot com
  */
-public class RelevanceFromClusteringFilter extends SimpleBatchFilter {
+public class RelevanceFromClustering extends SimpleBatchFilter {
 
 	/**
 	 * for serialization purposes
