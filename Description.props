@@ -1,7 +1,7 @@
 # Template Description file for a Weka package
  
 # Package name (required)
-PackageName=RelevanceFromClustering
+PackageName=RelevanceFromClusteringClosestCentroidHighRelevance
  
 # Version (required)
 Version=1.0.0
@@ -10,7 +10,7 @@ Version=1.0.0
 Date=2016-06-13
  
 # Title (required)
-Title=A fiter to compute data relevance through clustering
+Title=A fiter to compute data relevance through clustering; for each pattern its closest center is determined an relevance is computed as 1/(epsilon + distance_to_closest_centroid)
  
 # Category (recommended)
 Category=Preprocessing
