@@ -1,5 +1,6 @@
-rd /s /q ..\dist\RelevanceFromClusteringClosestCentroidHighRelevance
-del ..\dist\RelevanceFromClusteringClosestCentroidHighRelevance.zip
-rd /s /q "%userprofile%\wekafiles\packages\RelevanceFromClusteringClosestCentroidHighRelevance"
+set packageName=RelevanceFromClusteringClosestCentroidHighRelevance
+rd /S /Q ..\dist\%packageName%
+del ..\dist\%packageName%.zip
+rd /S /Q "%userprofile%\wekafiles\packages\%packageName%"
 call ant -buildfile ..\build_package.xml make_package
-xcopy /Q /Y ..\dist\RelevanceFromClusteringClosestCentroidHighRelevance "%userprofile%\wekafiles\packages\RelevanceFromClusteringClosestCentroidHighRelevance" /s /i
+xcopy ..\dist\%packageName% "%userprofile%\wekafiles\packages\%packageName%" /I /Q /Y
